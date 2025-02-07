@@ -4,10 +4,12 @@ import {
   FindBookOnHold,
   PatronRepository,
 } from '@library/lending/application';
-import { PatronFactory } from '@library/lending/domain';
+import { Patron, PatronFactory } from '@library/lending/domain';
 import { SharedInfrastructureNestjsCqrsEventsModule } from '@library/shared/infrastructure-nestjs-cqrs-events';
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { BookController } from 'libs/catalogue/src/lib/book.controller';
+import { PatronProfileController } from '/Users/rahibamin/Documents/ddd-example-solution/libs/lending/ui-rest/src/lib/patron-profile/patron-profile.controller'; 
 import { BookEntity } from './entities/book.entity';
 import { HoldEntity } from './entities/hold.entity';
 import { PatronEntity } from './entities/patron.entity';
@@ -16,12 +18,16 @@ import {
   DomainModelMapper,
   PatronRepo,
 } from './repositories/patron.repository';
+import { profile } from 'console';
 
 @Module({
   imports: [
     // @ToDo move it from here
     SharedInfrastructureNestjsCqrsEventsModule,
-    TypeOrmModule.forFeature([BookEntity, PatronEntity, HoldEntity]),
+
+    TypeOrmModule.forFeature([BookEntity, PatronEntity, HoldEntity],
+
+    ),
   ],
   providers: [
     BookRepo,
@@ -33,11 +39,8 @@ import {
     { provide: FindBookOnHold, useExisting: BookRepo },
     { provide: PatronRepository, useExisting: PatronRepo },
   ],
-  exports: [
-    BookRepository,
-    FindAvailableBook,
-    FindBookOnHold,
-    PatronRepository,
+  controllers: [BookController,PatronProfileController
+
   ],
 })
 export class LendingTypeOrmModule {}

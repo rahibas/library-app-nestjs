@@ -40,3 +40,7 @@ Thumbs.db
 
 # IDE
 .lh
+
+
+.nx/cache
+.nx/workspace-data
