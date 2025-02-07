@@ -1,8 +1,9 @@
 package repositories
 
 import (
+	"domain/entities"
+
 	"github.com/google/uuid"
-	"github.com/sklinkert/go-ddd/internal/domain/entities"
 )
 
 type DealerRepository interface {

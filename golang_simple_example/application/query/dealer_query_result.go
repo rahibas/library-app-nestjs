@@ -1,7 +1,7 @@
 package query
 
 import (
-	"github.com/sklinkert/go-ddd/internal/application/common"
+	"application/common"
 )
 
 type DealerQueryResult struct {

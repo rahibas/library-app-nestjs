@@ -3,13 +3,14 @@ package services
 import (
 	"errors"
 
+	"application/command"    // Replace this with the correct import path
+	"application/interfaces" // Replace this with the correct import path
+	"application/mapper"     // Replace this with the correct import path
+	"application/query"      // Replace this with the correct import path
+	"domain/entities"        // Replace this with the correct import path
+	"domain/repositories"    // Replace this with the correct import path
+
 	"github.com/google/uuid"
-	"github.com/sklinkert/go-ddd/internal/application/command"    // Replace this with the correct import path
-	"github.com/sklinkert/go-ddd/internal/application/interfaces" // Replace this with the correct import path
-	"github.com/sklinkert/go-ddd/internal/application/mapper"     // Replace this with the correct import path
-	"github.com/sklinkert/go-ddd/internal/application/query"      // Replace this with the correct import path
-	"github.com/sklinkert/go-ddd/internal/domain/entities"        // Replace this with the correct import path
-	"github.com/sklinkert/go-ddd/internal/domain/repositories"    // Replace this with the correct import path
 )
 
 type DealerService struct {

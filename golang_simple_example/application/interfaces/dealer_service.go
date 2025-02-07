@@ -1,9 +1,10 @@
 package interfaces
 
 import (
+	"application/command"
+	"application/query"
+
 	"github.com/google/uuid"
-	"github.com/sklinkert/go-ddd/internal/application/command"
-	"github.com/sklinkert/go-ddd/internal/application/query"
 )
 
 type DealerService interface {

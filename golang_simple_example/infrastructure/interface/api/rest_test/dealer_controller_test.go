@@ -8,12 +8,13 @@ import (
 	"net/http/httptest"
 	"testing"
 
+	"application/command"
+	"domain/entities"
+	"interface/api/rest"
+	"interface/api/rest/dto/request"
+	"interface/api/rest/dto/response"
+
 	"github.com/labstack/echo/v4"
-	"github.com/sklinkert/go-ddd/internal/application/command"
-	"github.com/sklinkert/go-ddd/internal/domain/entities"
-	"github.com/sklinkert/go-ddd/internal/interface/api/rest"
-	"github.com/sklinkert/go-ddd/internal/interface/api/rest/dto/request"
-	"github.com/sklinkert/go-ddd/internal/interface/api/rest/dto/response"
 	"github.com/stretchr/testify/assert"
 )
 

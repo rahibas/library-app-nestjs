@@ -5,9 +5,10 @@ import (
 	"fmt"
 	"testing"
 
+	"application/command"
+	"domain/entities"
+
 	"github.com/google/uuid"
-	"github.com/sklinkert/go-ddd/internal/application/command"
-	"github.com/sklinkert/go-ddd/internal/domain/entities"
 )
 
 // MockVehicleRepository is a mock implementation of the VehicleRepository interface

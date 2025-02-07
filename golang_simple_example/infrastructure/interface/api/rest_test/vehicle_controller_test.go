@@ -7,15 +7,17 @@ import (
 	"net/http/httptest"
 	"testing"
 
+	"application/command"
+	"application/common"
+	"domain/entities"
+	"infrastructure/interface/api/rest/dto/response"
+
 	"github.com/google/uuid"
-	"github.com/sklinkert/go-ddd/internal/application/command"
-	"github.com/sklinkert/go-ddd/internal/application/common"
-	"github.com/sklinkert/go-ddd/internal/domain/entities"
-	"github.com/sklinkert/go-ddd/internal/interface/api/rest/dto/response"
 	"github.com/stretchr/testify/mock"
 
+	"infrastructure/interface/api/rest"
+
 	"github.com/labstack/echo/v4"
-	"github.com/sklinkert/go-ddd/internal/interface/api/rest"
 	"github.com/stretchr/testify/assert"
 )
 

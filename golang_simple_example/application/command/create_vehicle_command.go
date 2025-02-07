@@ -1,8 +1,9 @@
 package command
 
 import (
+	"application/common"
+
 	"github.com/google/uuid"
-	"github.com/sklinkert/go-ddd/internal/application/common"
 )
 
 type CreateVehicleCommand struct {

@@ -1,11 +1,16 @@
 package command
 
-import "github.com/sklinkert/go-ddd/internal/application/common"
+import (
+	"application/common"
+
+	"github.com/google/uuid"
+)
 
 type CreateDealerCommand struct {
 	// TODO: Implement idempotency key
-
-	Name string
+	Id    uuid.UUID
+	Name  string
+	Email string
 }
 
 type CreateDealerCommandResult struct {

@@ -1,0 +1,4 @@
+github.com/google/uuid v1.6.0 h1:NIvaJDMOsjHA8n1jAhLSgzrAzy1Hgr+hNrb57e+94F0=
+github.com/google/uuid v1.6.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
+github.com/sklinkert/go-ddd v0.0.0-20241223204942-5136626b3c23 h1:nInvFfs26w9fPPY+HlXsOwqes1KQzxSx109H/gIBdqg=
+github.com/sklinkert/go-ddd v0.0.0-20241223204942-5136626b3c23/go.mod h1:3qMAGKiqllK2eDMhGqbg248bXlUkqzL66u7D07DBan0=

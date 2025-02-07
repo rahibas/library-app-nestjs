@@ -3,6 +3,8 @@ package entities
 import (
 	"errors"
 	"time"
+
+	"github.com/google/uuid"
 )
 
 type Dealer struct {
@@ -24,7 +26,7 @@ func (d *Dealer) validate() error {
 }
 func NewDealer(name, email string) *Dealer {
 	return &Dealer{
-		Id:        "1",
+		Id:        uuid.NewString(),
 		CreatedAt: time.Now(),
 		UpdatedAt: time.Now(),
 		Name:      name,
